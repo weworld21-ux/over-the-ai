@@ -14,7 +14,7 @@
 <title>OVER THE AI</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
 <style>
 /* Layout: 포스터 톤(화이트·블랙·레드)의 한 장짜리 안내 페이지. 히어로는 좌 텍스트/우 세로 포스터, 이후 단일 컬럼 흐름. */
 :root{
@@ -200,25 +200,33 @@ footer{padding-block:32px;font-size:13px;color:var(--muted)}
 .partners span{font-weight:700;font-size:clamp(16px,2.2vw,20px)}
 @media (max-width:860px){.photos{grid-template-columns:1fr}.partners{grid-template-columns:1fr}.partners div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
 /* interview section: compact */
-section.dark#interview,section.dark#interview-en{padding-block:44px}
-#interview .lead,#interview-en .lead{margin-top:10px;font-size:15px}
-#interview .steps,#interview-en .steps{margin-top:22px;gap:0 40px}
-#interview .row,#interview-en .row{padding:11px 0;grid-template-columns:96px 1fr;font-size:14.5px;line-height:1.6}
-#interview .how,#interview-en .how{margin-top:22px;font-size:14.5px}
-#interview .photos,#interview-en .photos{margin-top:24px;gap:14px;grid-template-columns:1fr 1fr}
-#interview .photos img,#interview-en .photos img{aspect-ratio:16/9}
-#interview .photos figcaption,#interview-en .photos figcaption{font-size:12px;margin-top:6px}
-#interview .shots,#interview-en .shots{margin-top:18px;gap:12px;max-width:560px}
-#interview .shots figure,#interview-en .shots figure{padding:8px}
-#interview .shots svg,#interview-en .shots svg{max-height:150px}
-#interview .shots figcaption,#interview-en .shots figcaption{font-size:12px;margin-top:6px}
-#interview .shoot,#interview-en .shoot{margin-top:24px;gap:20px 40px}
-#interview .shoot h3,#interview-en .shoot h3{font-size:16px;margin-bottom:4px}
-#interview .mini li,#interview-en .mini li{padding:8px 0;font-size:14px;line-height:1.55}
-#interview .mini li span,#interview-en .mini li span{font-size:13.5px}
-#interview .note,#interview-en .note{margin-top:20px;padding:12px 16px;font-size:13.5px}
-@media (max-width:860px){#interview .photos,#interview-en .photos,#interview .shots,#interview-en .shots{grid-template-columns:1fr 1fr}#interview .steps,#interview-en .steps{gap:0}}
-@media (max-width:560px){#interview .photos,#interview-en .photos,#interview .shots,#interview-en .shots{grid-template-columns:1fr}}
+section.dark#interview,section.dark#interview-en,section.dark#interview-ja,section.dark#interview-zh,section.dark#interview-fr{padding-block:44px}
+#interview .lead,#interview-en .lead,#interview-ja .lead,#interview-zh .lead,#interview-fr .lead{margin-top:10px;font-size:15px}
+#interview .steps,#interview-en .steps,#interview-ja .steps,#interview-zh .steps,#interview-fr .steps{margin-top:22px;gap:0 40px}
+#interview .row,#interview-en .row,#interview-ja .row,#interview-zh .row,#interview-fr .row{padding:11px 0;grid-template-columns:96px 1fr;font-size:14.5px;line-height:1.6}
+#interview .how,#interview-en .how,#interview-ja .how,#interview-zh .how,#interview-fr .how{margin-top:22px;font-size:14.5px}
+#interview .photos,#interview-en .photos,#interview-ja .photos,#interview-zh .photos,#interview-fr .photos{margin-top:24px;gap:14px;grid-template-columns:1fr 1fr}
+#interview .photos img,#interview-en .photos img,#interview-ja .photos img,#interview-zh .photos img,#interview-fr .photos img{aspect-ratio:16/9}
+#interview .photos figcaption,#interview-en .photos figcaption,#interview-ja .photos figcaption,#interview-zh .photos figcaption,#interview-fr .photos figcaption{font-size:12px;margin-top:6px}
+#interview .shots,#interview-en .shots,#interview-ja .shots,#interview-zh .shots,#interview-fr .shots{margin-top:18px;gap:12px;max-width:560px}
+#interview .shots figure,#interview-en .shots figure,#interview-ja .shots figure,#interview-zh .shots figure,#interview-fr .shots figure{padding:8px}
+#interview .shots svg,#interview-en .shots svg,#interview-ja .shots svg,#interview-zh .shots svg,#interview-fr .shots svg{max-height:150px}
+#interview .shots figcaption,#interview-en .shots figcaption,#interview-ja .shots figcaption,#interview-zh .shots figcaption,#interview-fr .shots figcaption{font-size:12px;margin-top:6px}
+#interview .shoot,#interview-en .shoot,#interview-ja .shoot,#interview-zh .shoot,#interview-fr .shoot{margin-top:24px;gap:20px 40px}
+#interview .shoot h3,#interview-en .shoot h3,#interview-ja .shoot h3,#interview-zh .shoot h3,#interview-fr .shoot h3{font-size:16px;margin-bottom:4px}
+#interview .mini li,#interview-en .mini li,#interview-ja .mini li,#interview-zh .mini li,#interview-fr .mini li{padding:8px 0;font-size:14px;line-height:1.55}
+#interview .mini li span,#interview-en .mini li span,#interview-ja .mini li span,#interview-zh .mini li span,#interview-fr .mini li span{font-size:13.5px}
+#interview .note,#interview-en .note,#interview-ja .note,#interview-zh .note,#interview-fr .note{margin-top:20px;padding:12px 16px;font-size:13.5px}
+@media (max-width:860px){#interview .photos,#interview-en .photos,#interview-ja .photos,#interview-zh .photos,#interview-fr .photos,#interview .shots,#interview-en .shots,#interview-ja .shots,#interview-zh .shots,#interview-fr .shots{grid-template-columns:1fr 1fr}#interview .steps,#interview-en .steps,#interview-ja .steps,#interview-zh .steps,#interview-fr .steps{gap:0}}
+@media (max-width:560px){#interview .photos,#interview-en .photos,#interview-ja .photos,#interview-zh .photos,#interview-fr .photos,#interview .shots,#interview-en .shots,#interview-ja .shots,#interview-zh .shots,#interview-fr .shots{grid-template-columns:1fr}}
+
+.L[lang=ja],.L[lang=ja] svg text{font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,system-ui,sans-serif}
+.L[lang=zh-Hans],.L[lang=zh-Hans] svg text{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',system-ui,sans-serif}
+.L[lang=ja] h2,.L[lang=ja] h3,.L[lang=zh-Hans] h2,.L[lang=zh-Hans] h3{line-height:1.35}
+.L[lang=ja] .hero h1,.L[lang=zh-Hans] .hero h1{font-family:var(--display)}
+.L[lang=ja],.L[lang=zh-Hans]{line-break:strict;word-break:normal}
+.lang{flex-wrap:wrap}
+@media (max-width:560px){.topbar .right{flex-wrap:wrap;gap:8px}.lang button{padding:6px 10px}}
 </style>
 </head>
 <body>
@@ -227,7 +235,7 @@ section.dark#interview,section.dark#interview-en{padding-block:44px}
   <div class="topbar">
     <span>KAICON BUSINESS NETWORK</span>
     <div class="right"><a href="https://kgaf.co.kr/">kgaf.co.kr</a>
-      <div class="lang" role="group" aria-label="Language"><button type="button" id="b-ko" aria-pressed="true">한국어</button><button type="button" id="b-en" aria-pressed="false">English</button></div></div>
+      <div class="lang" role="group" aria-label="Language"><button type="button" id="b-ko" aria-pressed="true">한국어</button><button type="button" id="b-en" aria-pressed="false">English</button><button type="button" id="b-ja" aria-pressed="false">日本語</button><button type="button" id="b-zh" aria-pressed="false">中文</button><button type="button" id="b-fr" aria-pressed="false">Français</button></div></div>
   </div>
 <div class="L" id="L-ko" lang="ko">
   <header class="hero">
@@ -777,15 +785,840 @@ section.dark#interview,section.dark#interview-en{padding-block:44px}
 
   <footer>© KAICON Business Network · OVER THE AI is a post-festival project for KAICON 2026 filmmakers and creators.</footer>
 </div>
+<div class="L" id="L-ja" lang="ja" hidden>
+  <header class="hero">
+    <div>
+      <div class="eyebrow">KAICON 2026 ポストフェスティバル・プロジェクト</div>
+      <h1>Over<br>the <em>AI</em></h1>
+      <p class="slogan">映画祭で始まったあなたの物語を、<br>次の観客へ届けます。</p>
+      <p class="sub">作品が一度の上映で終わらないよう、KAICONが次のステージを一緒に準備します。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">参加意向を送信する →</a>
+        <a class="btn ghost" href="#detail-ja">プロジェクト詳細</a>
+      </div>
+      <p class="sub" style="font-size:14px">参加意向の送信だけで、お支払いの義務は生じません。</p>
+    </div>
+    <figure class="poster">
+      <img src="" data-clone="0" alt="OVER THE AI 英語ポスター。白いフレームから黒と赤のフィルムが巻き出ている" width="760" height="1075">
+    </figure>
+  </header>
+
+  <div class="facts" role="list">
+    <div role="listitem"><b>90〜120分</b><span>作品と、その裏にある物語をつなぐ一本のオムニバス</span></div>
+    <div role="listitem"><b>IPTV · OTT · AI</b><span>IPTV、OTT、AIコンテンツプラットフォームへの配信。詳細はプラットフォームの審査・協議後にご案内します</span></div>
+    <div role="listitem"><b>全出品者対象</b><span>受賞の有無を問わず、KAICON 2026出品の映画監督・クリエイターが応募できます</span></div>
+  </div>
+
+  <section id="detail-ja">
+    <div class="two">
+      <div>
+        <div class="eyebrow">概要</div>
+        <h2>映画祭のその先へ、監督と作品の次の章</h2>
+        <p class="lead">KAICON 2026の出品作、監督インタビュー、制作の裏側の物語を一つにまとめた90〜120分のオムニバス・プロジェクトとして、IPTV・OTTでの配信を目指します。応募は監督1名につき作品1本です。90〜120分はプロジェクト全体の目標であり、個々の作品の長さではありません。</p>
+      </div>
+      <ul class="points">
+        <li>KAICON出品の映画監督・クリエイターのためのポストフェスティバル・プロジェクト</li>
+        <li>KAICON出品作と監督インタビューを結合</li>
+        <li>配給会社はMaru Art Center。90〜120分のオムニバスを、IPTV(KT Qook TV、SK Btv、U+tv)、OTT、AIコンテンツプラットフォームへ配信する取り組みです</li>
+        <li>KAICON Magazineでの特集と、監督・作品のブランディング、プロモーション</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="why-ja">
+    <div class="eyebrow">参加する理由</div>
+    <h2>監督のキャリアに<br>こう残ります</h2>
+    <p class="lead">映画祭への出品だけで終わっていた実績が、配信を目指す公式プロジェクトへの参加実績につながるよう設計しました。映画祭後のキャリアのためのプロジェクトです。</p>
+    <div class="why">
+      <div class="w"><h3>フィルモグラフィーに <em>一行が加わります</em></h3><p>短編作品が、IPTV・OTT配信を目指す90〜120分のオムニバス・プロジェクトの一部となり、公式プロジェクトのクレジットに監督の名前が載ります。</p></div>
+      <div class="w"><h3>映画祭の出品監督から <em>公式参加監督へ</em></h3><p>映画祭に作品を出品した監督から、配信プロジェクトに名前を連ねる参加監督へ。この実績はプロフィールやポートフォリオにそのまま記載できます。</p></div>
+      <div class="w"><h3>監督プロフィールが <em>映像とマガジンで残ります</em></h3><p>インタビュー映像とKAICON Magazineの2ページは、監督の紹介資料になります。制作会社やプラットフォームへの協業提案、SNS、各種応募にそのまま使えます。</p></div>
+      <div class="w"><h3>さらに深く関わると <em>共同監督・共同プロデューサー</em> のクレジット</h3><p>追加の制作業務に参加された場合は、実際の役割と契約に応じて共同監督・共同プロデューサーのクレジットを協議します。プロジェクトとともに制作経験を広げられます。</p></div>
+      <div class="w"><h3>作品が収益につながる <em>正式な契約</em></h3><p>OTT・IPTV配信で収益が生じた場合、別途の契約で定めた条件に従い、参加監督に分配します。口約束ではなく契約書で明記します。</p></div>
+      <div class="w"><h3>権利は守り、 <em>負担は小さく</em></h3><p>著作権は創作者にあり、参加意向の送信に費用はかかりません。条件を確認し、同意したうえでお決めいただけます。</p></div>
+    </div>
+    <div class="why-cta"><p>受賞の有無を問わず応募できます。まずは参加意向をフォームでお知らせください。</p><a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">参加意向を送信する →</a></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">特典</div>
+    <h2>参加監督に提供される内容</h2>
+    <div class="cards">
+      <div class="card"><h3>公式プロジェクト・クレジット</h3><p>原作監督およびオムニバス参加監督のクレジットを提供します。追加の制作業務に参加する場合は、別途契約に基づいて共同監督・共同プロデューサーのクレジットを協議します。</p></div>
+      <div class="card"><h3>IPTV・OTT・AIコンテンツプラットフォーム配信</h3><p>短編作品と監督インタビューを長編オムニバスにまとめ、IPTV、OTT、AIコンテンツプラットフォームへの配信の可能性を広げます。進捗は参加監督にメールでお知らせします。</p></div>
+      <div class="card"><h3>KAICON Magazineでのブランディング</h3><p>作品と監督を2ページで紹介します。プロフィール、作品紹介、創作哲学、インタビュー、制作の裏話を掲載し、掲載用のデジタルページファイルを提供します。</p></div>
+      <div class="card"><h3>監督インタビュー1回</h3><p>対面またはリモートで撮影し、特集に必要なインタビュー編集まで含みます。</p></div>
+      <div class="card"><h3>ポートフォリオ・プロモーション</h3><p>マガジンのコンテンツを、ポートフォリオ、SNS、国内外の協業提案資料に活用できます。</p></div>
+      <div class="card"><h3>KAICONネットワークでの紹介</h3><p>合意した範囲で、ホームページ、マガジン、SNS、KAICONネットワークを通じて監督と作品を紹介します。</p></div>
+      <div class="card share"><h3>OTT・IPTV配信の収益シェア</h3><p>OTT・IPTV配信で収益が生じた場合、別途契約で定めた分配・精算条件に従い、参加監督に収益を分配します。分配比率と精算方法は、契約前にご説明します。</p></div>
+    </div>
+  </section>
+
+  <section id="market-ja">
+    <div class="eyebrow">IPTV · OTT</div>
+    <h2>作品が視聴者に届くまで</h2>
+    <p class="lead">KAICON出品作と監督インタビューを一つのオムニバスにまとめ、IPTV、OTT、AIコンテンツプラットフォームへ届けることを目指します。以下は、韓国におけるIPTVとOTTの利用状況です。</p>
+    <div class="partners"><div><b>配給会社</b><span>Maru Art Center</span></div><div><b>IPTV配信の取り組み</b><span>KT Qook TV · SK Btv · U+tv</span></div></div>
+    <div class="market-grid">
+      <div class="stat"><b>2,153万</b><span>IPTV加入者数(2025年下半期)</span><small>有料放送加入者約3,615万人の59.57%</small></div>
+      <div class="stat"><b>81.8%</b><span>OTT利用率</span><small>有料OTT利用率は65.5%</small></div>
+      <div class="stat"><b>83.6%</b><span>OTT利用者のうちスマートフォンで視聴する割合</span><small>テレビでの視聴は36.4%</small></div>
+    </div>
+    <figure class="flowfig"><svg viewBox="0 0 760 232" role="img" aria-label="作品と監督インタビューがオムニバスにまとめられ、IPTV、OTT、AIコンテンツプラットフォームに届けられる流れ" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<defs><marker id="are-ja" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e0301e"/></marker></defs>
+<rect x="10" y="41" width="190" height="150" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="105" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">KAICON出品作</text>
+<text x="105" y="109" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">+ インタビュー</text>
+<text x="105" y="147" text-anchor="middle" font-size="13" fill="currentColor" opacity=".7">作品と創作の物語</text>
+<line x1="206" y1="116" x2="262" y2="116" stroke="#e0301e" stroke-width="3" marker-end="url(#are-ja)"/>
+<rect x="268" y="41" width="190" height="150" rx="2" fill="#e0301e"/>
+<text x="363" y="87" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">OVER THE AI</text>
+<text x="363" y="117" text-anchor="middle" font-size="15" fill="#fff">90〜120分のオムニバス</text>
+<text x="363" y="147" text-anchor="middle" font-size="13" fill="#fff" opacity=".9">配信への取り組み</text>
+<line x1="464" y1="85" x2="520" y2="40" stroke="#e0301e" stroke-width="3" marker-end="url(#are-ja)"/>
+<rect x="526" y="8" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="35" font-size="16" font-weight="700" fill="currentColor">IPTV</text>
+<text x="542" y="56" font-size="12.5" fill="currentColor" opacity=".75">KT Qook TV · SK Btv · U+tv</text>
+<line x1="464" y1="115" x2="520" y2="116" stroke="#e0301e" stroke-width="3" marker-end="url(#are-ja)"/>
+<rect x="526" y="84" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="111" font-size="16" font-weight="700" fill="currentColor">OTT</text>
+<text x="542" y="132" font-size="12.5" fill="currentColor" opacity=".75">アプリ・スマホ・スマートTV</text>
+<line x1="464" y1="145" x2="520" y2="192" stroke="#e0301e" stroke-width="3" marker-end="url(#are-ja)"/>
+<rect x="526" y="160" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="187" font-size="16" font-weight="700" fill="currentColor">AIコンテンツプラットフォーム</text>
+<text x="542" y="208" font-size="12.5" fill="currentColor" opacity=".75">AI制作映像のためのプラットフォーム</text>
+</svg><figcaption>OVER THE AI 配信の概要(コンセプト図)</figcaption></figure>
+    <p class="src">出典:放送メディア通信委員会・韓国情報通信振興協会(KAIT)「2025放送メディア利用行動調査」(2025年12月30日発表)、同委員会の有料放送加入者数(2026年5月発表)。数値は韓国市場の状況です。プラットフォームごとの掲載や公開日程は、プラットフォームの審査・協議の結果に応じてご案内します。
+    · <a href="https://www.dailian.co.kr/news/view/1592552/" target="_blank" rel="noopener">OTT利用状況の記事(韓国語)</a> · <a href="https://view.asiae.co.kr/article/2026052914300672556" target="_blank" rel="noopener">IPTV加入者数の記事(韓国語)</a></p>
+  </section>
+
+  <section class="dark" id="interview-ja">
+    <div class="wrap">
+      <div class="eyebrow">監督インタビュー</div>
+      <h2>インタビュー撮影のご案内</h2>
+      <p class="lead">作品の背景にある物語を撮影します。インタビューはオムニバスとマガジン特集の両方に使用します。</p>
+      <dl class="steps" style="margin-bottom:0">
+        <div class="row"><dt>回数</dt><dd>監督1名につきインタビュー1回</dd></div>
+        <div class="row"><dt>スタイル</dt><dd>一般的なドキュメンタリースタイルで、カメラ2台(正面と45°の側面)とワイヤレスマイクで撮影します。</dd></div>
+        <div class="row"><dt>形式</dt><dd>対面、リモート、またはご相談から選べます。</dd></div>
+        <div class="row"><dt>場所</dt><dd>撮影スタジオで行います。場所は別途ご案内します。</dd></div>
+        <div class="row"><dt>日程・場所</dt><dd>可能な日時を2つと、撮影可能な地域をお知らせください。日程は事前に調整します。共通の撮影日が必要な場合は、候補日をご案内します。</dd></div>
+        <div class="row"><dt>言語</dt><dd>ご希望の言語と通訳の要否をお知らせください。通訳などの追加のご要望にかかる費用は、事前の書面での同意をいただいたうえで発生します。</dd></div>
+        <div class="row"><dt>お話ししたいこと</dt><dd>創作の動機、制作過程、お話ししたいテーマをフォームにご記入いただけます。</dd></div>
+        <div class="row"><dt>編集</dt><dd>特集に必要なインタビュー編集を含みます。</dd></div>
+        <div class="row"><dt>想定質問</dt><dd>想定インタビュー質問リストは、このページに追加でご案内します。</dd></div>
+      </dl>
+      <p class="how">ドキュメンタリースタイルは、決まった台本に沿うのではなく、監督の言葉と話し方をそのまま記録します。カメラ2台で正面と45°の側面を同時に撮影するため、編集で画面を自然に切り替えられます。ワイヤレスマイクにより、動いても声をクリアに収録します。</p>
+      <div class="photos"><figure><img src="" data-clone="1" alt="コンクリートの壁のスタジオで椅子に座る監督を、カメラ2台が正面と側面から撮影している様子" loading="lazy"><figcaption>カメラ2台でのインタビュー撮影例</figcaption></figure><figure><img src="" data-clone="2" alt="シャツの襟にワイヤレスピンマイクを付けた監督のインタビューのクローズアップ" loading="lazy"><figcaption>ワイヤレスピンマイクを使用したクローズアップ例</figcaption></figure></div>
+      <div class="shots"><figure><svg viewBox="0 0 400 330" role="img" aria-label="正面カメラ、45度の側面カメラ、照明2つ、ワイヤレスマイクによるインタビュー撮影の配置図" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<rect x="10" y="10" width="380" height="285" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="200" cy="150" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="205" cy="164" r="4" fill="#e0301e"/>
+<text x="200" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">監督</text>
+<g transform="translate(200 252)"><rect x="-14" y="-9" width="28" height="18" fill="currentColor"/><polygon points="-6,-9 6,-9 11,-18 -11,-18" fill="currentColor"/></g>
+<line x1="186" y1="232" x2="150" y2="160" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/><line x1="214" y1="232" x2="250" y2="160" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="160" y="285" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">カメラA · 正面</text>
+<g transform="translate(276 216) rotate(-45)"><rect x="-14" y="-9" width="28" height="18" fill="currentColor"/><polygon points="-6,-9 6,-9 11,-18 -11,-18" fill="currentColor"/></g>
+<line x1="262" y1="198" x2="216" y2="134" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/><line x1="262" y1="198" x2="184" y2="166" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="318" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">カメラB · 45°側面</text>
+<rect x="56" y="62" width="34" height="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="90" y1="69" x2="140" y2="110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+<text x="73" y="96" text-anchor="middle" font-size="13" fill="currentColor">照明</text>
+<rect x="310" y="62" width="34" height="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="310" y1="69" x2="262" y2="110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+<text x="327" y="96" text-anchor="middle" font-size="13" fill="currentColor">照明</text>
+<circle cx="100" cy="225" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="100" y="252" text-anchor="middle" font-size="13" fill="currentColor">インタビュアー</text>
+<circle cx="26" cy="316" r="4" fill="#e0301e"/><text x="36" y="320" font-size="12.5" fill="currentColor">ワイヤレスマイク</text>
+</svg><figcaption>撮影レイアウト(コンセプト図)</figcaption></figure><figure><svg viewBox="0 0 400 250" role="img" aria-label="カメラA正面のワイド画面と、カメラB45度側面の画面の例" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<rect x="14" y="20" width="176" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="34" y1="28" x2="34" y2="122" stroke="currentColor" stroke-width="1.5" opacity=".35"/><line x1="170" y1="28" x2="170" y2="122" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+<circle cx="102" cy="68" r="15" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M46 130 Q48 100 102 96 Q156 100 158 130" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="109" cy="101" r="3.5" fill="#e0301e"/>
+<text x="102" y="154" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">カメラA · 正面</text><text x="102" y="174" text-anchor="middle" font-size="12.5" fill="currentColor" opacity=".75">ワイドのメイン画面</text>
+<rect x="210" y="20" width="176" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="296" cy="64" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/><polygon points="315,59 324,68 315,71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M238 130 Q244 100 290 96 Q336 98 350 130" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="302" cy="103" r="4" fill="#e0301e"/>
+<text x="298" y="154" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">カメラB · 45°側面</text><text x="298" y="174" text-anchor="middle" font-size="12.5" fill="currentColor" opacity=".75">タイトな補助画面</text>
+<text x="200" y="222" text-anchor="middle" font-size="13" fill="currentColor">編集で2つの画面を切り替えて構成します</text>
+</svg><figcaption>カメラ2台の画面構成(例)</figcaption></figure></div>
+      <div class="shoot">
+        <div><h3>撮影の流れ</h3><ol class="mini">
+          <li><div><b>事前準備</b><span>日程、形式、言語、お話ししたいテーマを、申込フォームとメールで確認します。</span></div></li>
+          <li><div><b>撮影当日</b><span>スタジオでカメラ2台とワイヤレスマイクを使ってインタビューを撮影します。場所は別途ご案内します。</span></div></li>
+          <li><div><b>編集</b><span>特集に必要な範囲でインタビューを編集します。</span></div></li>
+          <li><div><b>活用</b><span>合意した範囲で、オムニバスとKAICON Magazineの特集に使用します。</span></div></li>
+        </ol></div>
+        <div><h3>事前にご用意いただくもの</h3><ol class="mini check">
+          <li><div><b>監督紹介文と写真</b><span>マガジン特集に使用します。</span></div></li>
+          <li><div><b>作品紹介文、ポスター、スチール</b><span>必須の表記・クレジットと、ご希望の紹介方法もお知らせください。</span></div></li>
+          <li><div><b>作品のマスターファイル情報</b><span>映像・音声の仕様、字幕の有無、ファイル提供が可能な時期を確認します。</span></div></li>
+          <li><div><b>権利とAIツールの情報</b><span>音楽・画像・出演者の権利と、使用したAIツールの利用条件をお知らせください。</span></div></li>
+        </ol></div>
+      </div>
+      <p class="note">インタビュー出演・肖像・音声の利用範囲は、撮影前に別途同意をいただきます。アクセシビリティや日程に関するご要望もフォームにご記入ください。</p>
+    </div>
+  </section>
+
+  <section id="fees-ja">
+    <div class="eyebrow">参加費</div>
+    <h2>参加費のご案内</h2>
+    <p class="lead">参加費は、インタビューとマガジンコンテンツの制作、オムニバスの構成、配給提案の準備にかかる実務費用です。プラットフォームごとの掲載と公開日程は、プラットフォームの審査・協議の結果に応じてご案内します。</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>プログラム</th><th>海外参加費</th><th>国内お支払い額</th><th>提供内容</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>IPTV・OTT配信の取り組み</b></td>
+            <td class="price">USD 350</td>
+            <td class="price">500,000ウォン</td>
+            <td><ul><li>短編作品と監督インタビューを長編オムニバスに構成</li><li>IPTV、OTT、AIコンテンツプラットフォームへの放送・配信</li></ul></td>
+          </tr>
+          <tr>
+            <td><b>KAICON Magazineのみ</b></td>
+            <td class="price">USD 200</td>
+            <td class="price">300,000ウォン</td>
+            <td><ul><li>監督プロフィール、作品紹介、創作哲学</li><li>インタビューと制作の裏話</li></ul></td>
+          </tr>
+          <tr class="hl">
+            <td><b>統合パッケージ</b><span class="tag">両プログラム込み</span></td>
+            <td class="price">USD 500</td>
+            <td class="price">700,000ウォン</td>
+            <td><ul><li>IPTV・OTT配信の取り組み</li><li>KAICON Magazineでの作品・監督特集</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="option"><div><h3><span class="tag">追加オプション</span>KAICON Magazine 表紙モデル</h3><p>ご希望の場合、マガジンの表紙モデルとして紹介されます。該当号の表紙での紹介と表紙用画像の編集を含み、KAICON Magazineを含むプログラムに追加できます。表紙の決定は、編集協議と本人の同意によって行います。</p></div><div class="amt" style="flex:0 0 auto">+ USD 200<small>国内お支払い額は別途ご案内します</small></div></div>
+    <p class="fine">統合パッケージは、IPTV・OTTプロジェクトとKAICON Magazineの両方を含みます。海外参加費はUSD、国内お支払い額はウォン建てです。税の扱いと送金手数料は、お支払い前に書面でお知らせします。紙のマガジンの提供・配送、交通費・宿泊費・通訳費は含まれません。</p>
+    <div class="refund">
+      <div><b>お支払い前のキャンセル</b><span>お支払い前であれば、いつでも費用なしでキャンセルできます。</span></div>
+      <div><b>お支払い後のキャンセル</b><span>お支払い後の返金はできません。</span></div>
+      <div><b>事前のご案内と同意</b><span>返金不可の条件は、お支払い前にメールでご案内し、同意をいただいたうえで進めます。</span></div>
+      
+    </div>
+  </section>
+
+  <section id="process-ja">
+    <div class="eyebrow">プロセス</div>
+    <h2>進め方</h2>
+    <p class="lead">各段階でご案内を受け、同意したうえで次へ進みます。お支払いは4番目の段階以降です。</p>
+    <ol class="flow">
+      <li>フォームを送信<span>Googleフォームで受付</span></li>
+      <li>作品・権利の確認<span>申込内容を確認します</span></li>
+      <li>提供範囲・日程・契約<span>メールで個別にご案内</span></li>
+      <li>最終的なご判断<span>監督ご自身が決定します</span></li>
+      <li>別途の同意と契約<span>コンテンツ使用同意</span></li>
+      <li>お支払い<span>ご案内した期限と金額に従います</span></li>
+      <li>インタビュー・マガジン・オムニバス<span>合意した日程で制作します</span></li>
+      <li>配信とプロモーション<span>結果はメールで共有します</span></li>
+    </ol>
+  </section>
+
+  <section id="notice-ja">
+    <div class="eyebrow">ご確認事項</div>
+    <h2>お申し込み前にご確認ください</h2>
+    <ul class="notice">
+      <li class="ok">参加意向の送信だけで、お支払いの義務は生じません。</li>
+      <li class="ok">作品の著作権は創作者にあり、このプロジェクトによって譲渡されることはありません。</li>
+      <li class="ok">使用権は、別途の契約によってのみ付与されます。</li>
+      <li class="ok">プロモーションへの同意、有料参加、配給契約は、それぞれ別に進めます。</li>
+      <li class="ok">プラットフォームごとの掲載と公開日程は、プラットフォームの審査・協議の結果に応じてご案内します。</li>
+      <li>共同監督・共同プロデューサーのクレジットは、実際の役割と契約によって決まります。</li>
+    </ul>
+    <p class="fine">作品は、音楽、画像、出演者、AIツールの権利が確認できてから公開・配信します。ご提供いただいた資料を、AI学習やモデル学習に使用することはありません。</p>
+  </section>
+
+  <section id="faq-ja">
+    <div class="eyebrow">FAQ</div>
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details><summary>受賞できなかった作品でも応募できますか?</summary><p>はい。KAICON 2026の出品者であれば、受賞の有無を問わず応募できます。</p></details>
+      <details><summary>申し込むとすぐに参加費を支払う必要がありますか?</summary><p>いいえ。このフォームは参加意向を確認するためのもので、費用の支払い義務は生じません。提供内容と条件をご案内し、同意をいただいてからお支払いいただきます。</p></details>
+      <details><summary>作品の著作権や配給権は移りますか?</summary><p>いいえ。作品の著作権は創作者・権利者にあり、このプロジェクトによって譲渡されません。KAICONが作品を収録・編集・上映・配信するには、まず使用権を付与する別途の契約を締結します。契約では、使用の範囲、編集・承認の範囲、地域と期間、クレジット、収益が生じた場合の分配・精算の条件を定めます。フォームの送信やプロモーション利用への同意だけでは使用権は付与されず、契約の締結前に作品を公開・配信することはありません。</p></details>
+      <details><summary>複数の作品を応募できますか?</summary><p>監督1名につき作品1本でご応募ください。</p></details>
+      <details><summary>IPTV・OTTではどのように配信されますか?</summary><p>作品と監督インタビューを90〜120分のオムニバスにまとめ、Maru Art Centerを配給会社として、IPTV(KT Qook TV、SK Btv、U+tv)、OTT、AIコンテンツプラットフォームで放送・配信することを目指します。プラットフォームごとの掲載や公開日程などの詳細は、プラットフォームの審査・協議の結果に応じて、メールでご案内します。</p></details>
+      <details><summary>海外在住でも参加できますか?</summary><p>はい、もちろんです。インタビューはご自身で撮影してお送りいただくこともできます。</p></details>
+      <details><summary>キャンセルした場合、返金はありますか?</summary><p>お支払い後の返金はできません。お支払い前に提供内容と返金不可の条件をご案内し、同意をいただいたうえで進めます。フォームの送信に費用はかかりません。</p></details>
+      <details><summary>問い合わせはどうすればよいですか?</summary><p>メールの件名に[OVER THE AI お問い合わせ]と記載し、お名前、作品名、連絡先をお送りください。お電話でもご連絡いただけます。</p></details>
+    </div>
+  </section>
+
+  <section class="dark final">
+    <div class="wrap">
+      <div class="eyebrow">応募</div>
+      <h2>あなたの作品。私たちの次の章。</h2>
+      <p class="lead">参加意向の送信は、参加費をお支払いいただくという意味ではありません。別途コンテンツ使用同意の手続きを行いますので、ためらわずにご応募ください。</p>
+      <div class="cta-row qr-row">
+        <a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">OVER THE AI に応募する →</a>
+      <figure class="qrbox"><img src="" data-clone="3" alt="OVER THE AI 申込フォームのQRコード" width="112" height="112"><figcaption>QRで応募<span>スマートフォンのカメラでフォームを開けます</span></figcaption></figure></div>
+      <div class="contact">
+        <div><b>KAICON 運営事務局</b>執行委員長 Lee Donghyun · プロデューサー Park Seonghan · コーディネーター Kim Mijeong</div>
+        <div><b>お問い合わせ</b>+82 507-1471-7991 · weworld21@gmail.com</div>
+        <div><b>KAICON 公式サイト</b><a href="https://www.kaicon.kr/" target="_blank" rel="noopener">www.kaicon.kr</a></div>
+        <div><b>配給会社</b>Maru Art Center</div>
+        <div><b>KAICON BUSINESS NETWORK</b><a href="https://kgaf.co.kr/" target="_blank" rel="noopener">kgaf.co.kr</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>© KAICON Business Network · OVER THE AI は、KAICON 2026出品の映画監督・クリエイターのためのポストフェスティバル・プロジェクトです。</footer>
+</div>
+<div class="L" id="L-zh" lang="zh-Hans" hidden>
+  <header class="hero">
+    <div>
+      <div class="eyebrow">KAICON 2026 电影节后续项目</div>
+      <h1>Over<br>the <em>AI</em></h1>
+      <p class="slogan">始于电影节的你的故事,<br>现在,让它走向下一批观众。</p>
+      <p class="sub">为了让你的作品不止于一次放映,KAICON 将与你一起筹备下一个舞台。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">提交参与意向 →</a>
+        <a class="btn ghost" href="#detail-zh">项目详情</a>
+      </div>
+      <p class="sub" style="font-size:14px">提交参与意向并不产生付款义务。</p>
+    </div>
+    <figure class="poster">
+      <img src="" data-clone="0" alt="OVER THE AI 英文海报。黑红相间的胶片从白色画框中卷出" width="760" height="1075">
+    </figure>
+  </header>
+
+  <div class="facts" role="list">
+    <div role="listitem"><b>90–120分钟</b><span>把影片与其背后的故事连在一起的一部合集</span></div>
+    <div role="listitem"><b>IPTV · OTT · AI</b><span>面向 IPTV、OTT 和 AI 内容平台发行,具体事项在平台审核与协商后告知</span></div>
+    <div role="listitem"><b>所有参赛者</b><span>无论是否获奖,KAICON 2026 的参赛导演和创作者均可申请</span></div>
+  </div>
+
+  <section id="detail-zh">
+    <div class="two">
+      <div>
+        <div class="eyebrow">关于项目</div>
+        <h2>电影节之后,导演与作品的下一章</h2>
+        <p class="lead">我们将 KAICON 2026 的参赛作品、导演访谈和各作品的创作故事汇编为一部90–120分钟的合集项目,并推进 IPTV、OTT 发行。每位导演提交一部作品。90–120分钟是整个项目的目标时长,并非单部作品的时长。</p>
+      </div>
+      <ul class="points">
+        <li>为 KAICON 参赛导演和创作者设立的电影节后续项目</li>
+        <li>KAICON 参赛作品与导演访谈相结合</li>
+        <li>发行方为 Maru Art Center;90–120分钟的合集将推进发行至 IPTV(KT Qook TV、SK Btv、U+tv)、OTT 和 AI 内容平台</li>
+        <li>KAICON Magazine 专题报道,以及对导演和作品的品牌塑造与宣传</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="why-zh">
+    <div class="eyebrow">为什么参加</div>
+    <h2>你的职业履历中<br>会留下这些</h2>
+    <p class="lead">原本只是一次电影节参赛的经历,将成为一个推进发行的正式项目的参与履历。这是为电影节之后的职业发展而设计的项目。</p>
+    <div class="why">
+      <div class="w"><h3>你的作品履历中 <em>将多出一行</em></h3><p>你的短片将成为推进 IPTV、OTT 发行的90–120分钟合集项目的一部分,你的名字会出现在正式的项目片尾字幕中。</p></div>
+      <div class="w"><h3>从电影节参赛导演, <em>成为正式参与导演</em></h3><p>从提交过作品的导演,成为在发行项目上署名的参与导演。这段经历可以直接写进你的简介和作品集。</p></div>
+      <div class="w"><h3>你的个人介绍将以 <em>视频和杂志的形式留存</em></h3><p>访谈视频和 KAICON Magazine 的两页内容,将成为你的介绍资料。可用于向制作公司和平台提交的合作提案、社交媒体和各类申请。</p></div>
+      <div class="w"><h3>更深入参与,可获得 <em>联合导演或联合制片人</em> 署名</h3><p>如果你参与额外的制作工作,我们将根据你的实际角色和合同,协商联合导演或联合制片人的署名。你可以随项目一起拓宽制作经验。</p></div>
+      <div class="w"><h3>通过正式协议,让作品与 <em>收益</em></h3><p>当 OTT 或 IPTV 发行产生收益时,将按另行签订的协议中约定的条件分配给参与导演。一切以书面形式明确,而不是口头承诺。</p></div>
+      <div class="w"><h3>保留你的权利, <em>把风险降到最小</em></h3><p>版权归你所有,提交表单不产生任何费用。你可以在阅读条款并同意之后再做决定。</p></div>
+    </div>
+    <div class="why-cta"><p>无论是否获奖都可以申请。请先在表单中留下你的参与意向。</p><a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">提交参与意向 →</a></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">权益</div>
+    <h2>参与导演可获得的内容</h2>
+    <div class="cards">
+      <div class="card"><h3>正式项目署名</h3><p>提供原作导演及合集参与导演的署名。如果参与额外的制作工作,将根据另行签订的合同协商联合导演或联合制片人的署名。</p></div>
+      <div class="card"><h3>IPTV、OTT 和 AI 内容平台发行</h3><p>将短片和导演访谈整合为长片形式的合集,扩大在 IPTV、OTT 和 AI 内容平台发行的可能性。进展将通过邮件告知参与导演。</p></div>
+      <div class="card"><h3>KAICON Magazine 品牌塑造</h3><p>用两页篇幅介绍你和你的作品:个人简介、作品介绍、创作理念、访谈和幕后故事。并提供用于刊载的电子页面文件。</p></div>
+      <div class="card"><h3>一次导演访谈</h3><p>线下或远程拍摄,并包含专题所需的访谈剪辑。</p></div>
+      <div class="card"><h3>作品集与宣传</h3><p>杂志内容可用于你的作品集、社交媒体,以及面向国内外合作的提案。</p></div>
+      <div class="card"><h3>KAICON 网络曝光</h3><p>在约定范围内,通过官网、杂志、社交媒体和 KAICON 网络介绍你和你的作品。</p></div>
+      <div class="card share"><h3>OTT·IPTV 发行收益分成</h3><p>当 OTT 或 IPTV 发行产生收益时,将按另行签订的协议中约定的分配与结算条件,与参与导演分享收益。分成比例和结算方式会在签约前说明。</p></div>
+    </div>
+  </section>
+
+  <section id="market-zh">
+    <div class="eyebrow">IPTV · OTT</div>
+    <h2>你的作品如何触达观众</h2>
+    <p class="lead">我们的目标是把 KAICON 参赛作品和导演访谈汇编为一部合集,并送达 IPTV、OTT 和 AI 内容平台。以下是韩国目前 IPTV 和 OTT 的使用情况。</p>
+    <div class="partners"><div><b>发行方</b><span>Maru Art Center</span></div><div><b>IPTV 发行计划</b><span>KT Qook TV · SK Btv · U+tv</span></div></div>
+    <div class="market-grid">
+      <div class="stat"><b>2153万</b><span>IPTV 用户数(2025年下半年)</span><small>占约3615万付费电视用户的59.57%</small></div>
+      <div class="stat"><b>81.8%</b><span>OTT 使用率</span><small>付费 OTT 使用率为65.5%</small></div>
+      <div class="stat"><b>83.6%</b><span>的 OTT 用户使用智能手机观看</span><small>36.4%通过电视观看</small></div>
+    </div>
+    <figure class="flowfig"><svg viewBox="0 0 760 232" role="img" aria-label="作品和导演访谈被汇编为合集,并送达 IPTV、OTT 和 AI 内容平台的流程" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<defs><marker id="are-zh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e0301e"/></marker></defs>
+<rect x="10" y="41" width="190" height="150" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="105" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">KAICON 参赛作品</text>
+<text x="105" y="109" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">+ 访谈</text>
+<text x="105" y="147" text-anchor="middle" font-size="13" fill="currentColor" opacity=".7">作品及其故事</text>
+<line x1="206" y1="116" x2="262" y2="116" stroke="#e0301e" stroke-width="3" marker-end="url(#are-zh)"/>
+<rect x="268" y="41" width="190" height="150" rx="2" fill="#e0301e"/>
+<text x="363" y="87" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">OVER THE AI</text>
+<text x="363" y="117" text-anchor="middle" font-size="15" fill="#fff">90–120分钟合集</text>
+<text x="363" y="147" text-anchor="middle" font-size="13" fill="#fff" opacity=".9">发行计划</text>
+<line x1="464" y1="85" x2="520" y2="40" stroke="#e0301e" stroke-width="3" marker-end="url(#are-zh)"/>
+<rect x="526" y="8" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="35" font-size="16" font-weight="700" fill="currentColor">IPTV</text>
+<text x="542" y="56" font-size="12.5" fill="currentColor" opacity=".75">KT Qook TV · SK Btv · U+tv</text>
+<line x1="464" y1="115" x2="520" y2="116" stroke="#e0301e" stroke-width="3" marker-end="url(#are-zh)"/>
+<rect x="526" y="84" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="111" font-size="16" font-weight="700" fill="currentColor">OTT</text>
+<text x="542" y="132" font-size="12.5" fill="currentColor" opacity=".75">应用 · 手机 · 智能电视</text>
+<line x1="464" y1="145" x2="520" y2="192" stroke="#e0301e" stroke-width="3" marker-end="url(#are-zh)"/>
+<rect x="526" y="160" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="187" font-size="16" font-weight="700" fill="currentColor">AI 内容平台</text>
+<text x="542" y="208" font-size="12.5" fill="currentColor" opacity=".75">AI 制作视频平台</text>
+</svg><figcaption>OVER THE AI 发行概览(概念图)</figcaption></figure>
+    <p class="src">来源:韩国放送媒体通信委员会与韩国信息通信振兴协会(KAIT)《2025年广播媒体使用行为调查》(2025年12月30日发布);该委员会的付费电视用户数据(2026年5月发布)。以上为韩国市场数据。各平台的上线与公开日程,将根据平台审核与协商结果告知。
+    · <a href="https://www.dailian.co.kr/news/view/1592552/" target="_blank" rel="noopener">OTT 使用率报道(韩文)</a> · <a href="https://view.asiae.co.kr/article/2026052914300672556" target="_blank" rel="noopener">IPTV 用户数报道(韩文)</a></p>
+  </section>
+
+  <section class="dark" id="interview-zh">
+    <div class="wrap">
+      <div class="eyebrow">导演访谈</div>
+      <h2>访谈拍摄指南</h2>
+      <p class="lead">我们拍摄你作品背后的故事。访谈将用于合集和杂志专题。</p>
+      <dl class="steps" style="margin-bottom:0">
+        <div class="row"><dt>次数</dt><dd>每位导演一次访谈</dd></div>
+        <div class="row"><dt>风格</dt><dd>常规纪录片风格,使用两台摄影机(正面和45°侧面)及无线麦克风拍摄。</dd></div>
+        <div class="row"><dt>方式</dt><dd>可选线下、远程或另行协商。</dd></div>
+        <div class="row"><dt>地点</dt><dd>在摄影棚拍摄,地点另行通知。</dd></div>
+        <div class="row"><dt>日程与地点</dt><dd>请提供两个可行的日期和时间,以及可以拍摄的地区。日程提前共同确定。如需统一的拍摄日期,我们会发送候选日期。</dd></div>
+        <div class="row"><dt>语言</dt><dd>请告知你偏好的语言以及是否需要口译。口译等其他特殊需求产生的费用,须在事先书面同意后才会发生。</dd></div>
+        <div class="row"><dt>你想谈的内容</dt><dd>可在表单中填写你的创作动机、制作过程,或任何你想谈的主题。</dd></div>
+        <div class="row"><dt>剪辑</dt><dd>包含专题所需的访谈剪辑。</dd></div>
+        <div class="row"><dt>预期问题</dt><dd>预期的访谈问题清单将补充到本页面。</dd></div>
+      </dl>
+      <p class="how">纪录片风格不依照固定剧本,而是记录导演说了什么、怎么说。两台摄影机同时拍摄正面和45°侧面,剪辑时可以自然切换画面;无线麦克风即使在你走动时也能保证声音清晰。</p>
+      <div class="photos"><figure><img src="" data-clone="1" alt="在混凝土墙面的摄影棚里,导演坐在椅子上,两台摄影机分别从正面和侧面拍摄" loading="lazy"><figcaption>双机位访谈布置(示例)</figcaption></figure><figure><img src="" data-clone="2" alt="导演访谈的特写,衬衫领口别着无线领夹麦克风" loading="lazy"><figcaption>使用无线领夹麦克风的特写(示例)</figcaption></figure></div>
+      <div class="shots"><figure><svg viewBox="0 0 400 330" role="img" aria-label="使用正面摄影机、45度侧面摄影机、两盏灯和无线麦克风的访谈拍摄布局图" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<rect x="10" y="10" width="380" height="285" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="200" cy="150" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="205" cy="164" r="4" fill="#e0301e"/>
+<text x="200" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">导演</text>
+<g transform="translate(200 252)"><rect x="-14" y="-9" width="28" height="18" fill="currentColor"/><polygon points="-6,-9 6,-9 11,-18 -11,-18" fill="currentColor"/></g>
+<line x1="186" y1="232" x2="150" y2="160" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/><line x1="214" y1="232" x2="250" y2="160" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="160" y="285" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">摄影机A · 正面</text>
+<g transform="translate(276 216) rotate(-45)"><rect x="-14" y="-9" width="28" height="18" fill="currentColor"/><polygon points="-6,-9 6,-9 11,-18 -11,-18" fill="currentColor"/></g>
+<line x1="262" y1="198" x2="216" y2="134" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/><line x1="262" y1="198" x2="184" y2="166" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="318" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">摄影机B · 45°侧面</text>
+<rect x="56" y="62" width="34" height="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="90" y1="69" x2="140" y2="110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+<text x="73" y="96" text-anchor="middle" font-size="13" fill="currentColor">灯光</text>
+<rect x="310" y="62" width="34" height="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="310" y1="69" x2="262" y2="110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+<text x="327" y="96" text-anchor="middle" font-size="13" fill="currentColor">灯光</text>
+<circle cx="100" cy="225" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="100" y="252" text-anchor="middle" font-size="13" fill="currentColor">访谈者</text>
+<circle cx="26" cy="316" r="4" fill="#e0301e"/><text x="36" y="320" font-size="12.5" fill="currentColor">无线麦克风</text>
+</svg><figcaption>拍摄布局(概念图)</figcaption></figure><figure><svg viewBox="0 0 400 250" role="img" aria-label="摄影机A正面广角画面与摄影机B 45度侧面画面的示例" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<rect x="14" y="20" width="176" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="34" y1="28" x2="34" y2="122" stroke="currentColor" stroke-width="1.5" opacity=".35"/><line x1="170" y1="28" x2="170" y2="122" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+<circle cx="102" cy="68" r="15" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M46 130 Q48 100 102 96 Q156 100 158 130" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="109" cy="101" r="3.5" fill="#e0301e"/>
+<text x="102" y="154" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">摄影机A · 正面</text><text x="102" y="174" text-anchor="middle" font-size="12.5" fill="currentColor" opacity=".75">广角主画面</text>
+<rect x="210" y="20" width="176" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="296" cy="64" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/><polygon points="315,59 324,68 315,71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M238 130 Q244 100 290 96 Q336 98 350 130" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="302" cy="103" r="4" fill="#e0301e"/>
+<text x="298" y="154" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">摄影机B · 45°侧面</text><text x="298" y="174" text-anchor="middle" font-size="12.5" fill="currentColor" opacity=".75">更紧凑的辅助画面</text>
+<text x="200" y="222" text-anchor="middle" font-size="13" fill="currentColor">剪辑时在两个画面之间切换</text>
+</svg><figcaption>双机位构图(示例)</figcaption></figure></div>
+      <div class="shoot">
+        <div><h3>拍摄流程</h3><ol class="mini">
+          <li><div><b>准备</b><span>我们通过表单和邮件确认日程、方式、语言和你想谈的内容。</span></div></li>
+          <li><div><b>拍摄当天</b><span>在摄影棚使用两台摄影机和无线麦克风拍摄访谈,地点另行通知。</span></div></li>
+          <li><div><b>剪辑</b><span>按专题所需对访谈进行剪辑。</span></div></li>
+          <li><div><b>使用</b><span>在约定范围内,用于合集和 KAICON Magazine 专题。</span></div></li>
+        </ol></div>
+        <div><h3>建议提前准备</h3><ol class="mini check">
+          <li><div><b>导演简介和照片</b><span>用于杂志专题。</span></div></li>
+          <li><div><b>作品简介、海报、剧照</b><span>请注明必须标注的署名,以及你希望的介绍方式。</span></div></li>
+          <li><div><b>作品母版文件信息</b><span>视频和音频规格、字幕情况,以及可提供文件的时间。</span></div></li>
+          <li><div><b>权利与 AI 工具信息</b><span>音乐、图像和演员的权利,以及所用 AI 工具的使用条款。</span></div></li>
+        </ol></div>
+      </div>
+      <p class="note">你的出镜、肖像和声音的使用范围,会在拍摄前另行征得同意。无障碍或日程方面的需求可以写在表单中。</p>
+    </div>
+  </section>
+
+  <section id="fees-zh">
+    <div class="eyebrow">参与费用</div>
+    <h2>参与费用说明</h2>
+    <p class="lead">该费用用于访谈与杂志内容的制作、合集的汇编以及发行提案的准备等实际成本。各平台的上线与公开日程,将根据平台审核与协商结果告知。</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>项目</th><th>海外费用</th><th>韩国国内支付</th><th>包含内容</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>IPTV·OTT 发行计划</b></td>
+            <td class="price">USD 350</td>
+            <td class="price">500,000韩元</td>
+            <td><ul><li>将短片和导演访谈汇编为长片形式的合集</li><li>面向 IPTV、OTT 和 AI 内容平台的播出与发行</li></ul></td>
+          </tr>
+          <tr>
+            <td><b>仅 KAICON Magazine</b></td>
+            <td class="price">USD 200</td>
+            <td class="price">300,000韩元</td>
+            <td><ul><li>导演简介、作品介绍、创作理念</li><li>访谈与幕后故事</li></ul></td>
+          </tr>
+          <tr class="hl">
+            <td><b>综合套餐</b><span class="tag">包含两个项目</span></td>
+            <td class="price">USD 500</td>
+            <td class="price">700,000韩元</td>
+            <td><ul><li>IPTV·OTT 发行计划</li><li>KAICON Magazine 作品与导演专题</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="option"><div><h3><span class="tag">附加选项</span>KAICON Magazine 封面人物</h3><p>如有意愿,你可以作为杂志封面人物登场。包含所选一期的封面专题和封面图片编辑,可加购于任何包含 KAICON Magazine 的项目。封面人选通过编辑协商和你的同意确定。</p></div><div class="amt" style="flex:0 0 auto">+ USD 200<small>韩国国内支付金额另行通知</small></div></div>
+    <p class="fine">综合套餐同时包含 IPTV·OTT 项目和 KAICON Magazine。海外费用以美元计,韩国国内支付以韩元计。税费处理方式和转账手续费将在付款前以书面方式说明。纸质杂志的提供与邮寄,以及交通、住宿、口译费用不包含在内。</p>
+    <div class="refund">
+      <div><b>付款前取消</b><span>付款之前可随时取消,不产生任何费用。</span></div>
+      <div><b>付款后取消</b><span>费用一经支付,不予退还。</span></div>
+      <div><b>事先告知与同意</b><span>不予退款的条款会在付款前通过邮件发送,仅在你同意后才继续推进。</span></div>
+      
+    </div>
+  </section>
+
+  <section id="process-zh">
+    <div class="eyebrow">流程</div>
+    <h2>如何进行</h2>
+    <p class="lead">每个步骤都会先向你说明并取得你的同意,再进入下一步。付款在第4步之后才进行。</p>
+    <ol class="flow">
+      <li>提交表单<span>通过 Google 表单接收</span></li>
+      <li>作品与权利审核<span>我们审核你提交的内容</span></li>
+      <li>范围、日程与合同<span>通过邮件单独告知</span></li>
+      <li>你的最终决定<span>由导演决定</span></li>
+      <li>另行同意与签约<span>内容使用协议</span></li>
+      <li>付款<span>按告知的期限和金额</span></li>
+      <li>访谈、杂志、合集<span>按约定日程制作</span></li>
+      <li>发行与宣传<span>结果通过邮件分享</span></li>
+    </ol>
+  </section>
+
+  <section id="notice-zh">
+    <div class="eyebrow">须知</div>
+    <h2>申请前请阅读</h2>
+    <ul class="notice">
+      <li class="ok">提交参与意向并不产生付款义务。</li>
+      <li class="ok">你的作品版权归你所有,不会因本项目而转让。</li>
+      <li class="ok">使用权仅通过另行签订的协议授予。</li>
+      <li class="ok">宣传使用同意、付费参与和发行合同分别单独办理。</li>
+      <li class="ok">各平台的上线与公开日程,将根据平台审核与协商结果告知。</li>
+      <li>联合导演和联合制片人的署名取决于你的实际角色和合同。</li>
+    </ul>
+    <p class="fine">只有在音乐、图像、演员和 AI 工具的权利确认无误之后,作品才会公开或发行。你提供的资料不会用于 AI 训练或模型训练。</p>
+  </section>
+
+  <section id="faq-zh">
+    <div class="eyebrow">FAQ</div>
+    <h2>常见问题</h2>
+    <div class="faq">
+      <details><summary>我的作品没有获奖,还能申请吗?</summary><p>可以。无论是否获奖,KAICON 2026 的任何参赛者都可以申请。</p></details>
+      <details><summary>一申请就要付款吗?</summary><p>不用。表单只记录你的参与意向,不产生付款义务。在你收到提供范围和条件并表示同意之后才付款。</p></details>
+      <details><summary>我的作品版权或发行权会转让吗?</summary><p>不会。你的作品版权归你(创作者或权利人)所有,不会因本项目而转让。KAICON 若要收录、剪辑、放映或发行作品,须先与你签订授予使用权的另行协议。协议将约定使用范围、剪辑与确认的范围、地域与期限、署名,以及产生收益时的分成与结算方式。仅提交表单或同意宣传使用,并不授予使用权,在协议签订之前作品不会公开或发行。</p></details>
+      <details><summary>可以提交多部作品吗?</summary><p>请每位导演提交一部作品。</p></details>
+      <details><summary>作品将如何在 IPTV 和 OTT 上发行?</summary><p>我们的目标是将作品和导演访谈汇编为一部90–120分钟的合集,由 Maru Art Center 作为发行方,在 IPTV(KT Qook TV、SK Btv、U+tv)、OTT 和 AI 内容平台播出和发行。各平台的上线、公开日程等具体事项,将根据平台审核与协商结果通过邮件告知。</p></details>
+      <details><summary>我在海外也能参加吗?</summary><p>当然可以。你也可以自行拍摄访谈并发送给我们。</p></details>
+      <details><summary>取消的话可以退款吗?</summary><p>费用一经支付,不予退还。付款前我们会发送提供范围和不予退款的条款,仅在你同意后才继续。提交表单不产生任何费用。</p></details>
+      <details><summary>我该如何联系你们?</summary><p>请在邮件主题中写明[OVER THE AI 咨询],并附上你的姓名、作品名称和联系方式。也可以电话联系。</p></details>
+    </div>
+  </section>
+
+  <section class="dark final">
+    <div class="wrap">
+      <div class="eyebrow">申请</div>
+      <h2>你的作品,我们的下一章。</h2>
+      <p class="lead">提交参与意向并不代表你要支付费用。我们会先办理另行的内容使用同意手续,所以请不要犹豫,放心申请。</p>
+      <div class="cta-row qr-row">
+        <a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">申请 OVER THE AI →</a>
+      <figure class="qrbox"><img src="" data-clone="3" alt="OVER THE AI 申请表单的二维码" width="112" height="112"><figcaption>扫码申请<span>用手机相机即可打开表单</span></figcaption></figure></div>
+      <div class="contact">
+        <div><b>KAICON 运营事务局</b>执行委员长 Lee Donghyun · 制片人 Park Seonghan · 协调员 Kim Mijeong</div>
+        <div><b>联系方式</b>+82 507-1471-7991 · weworld21@gmail.com</div>
+        <div><b>KAICON 官方网站</b><a href="https://www.kaicon.kr/" target="_blank" rel="noopener">www.kaicon.kr</a></div>
+        <div><b>发行方</b>Maru Art Center</div>
+        <div><b>KAICON BUSINESS NETWORK</b><a href="https://kgaf.co.kr/" target="_blank" rel="noopener">kgaf.co.kr</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>© KAICON Business Network · OVER THE AI 是为 KAICON 2026 参赛导演和创作者设立的电影节后续项目。</footer>
+</div>
+<div class="L" id="L-fr" lang="fr" hidden>
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Projet post-festival KAICON 2026</div>
+      <h1>Over<br>the <em>AI</em></h1>
+      <p class="slogan">Votre histoire a commencé au festival.<br>Faites-la maintenant rencontrer un nouveau public.</p>
+      <p class="sub">Pour que votre film ne se limite pas à une seule projection, KAICON prépare avec vous l'étape suivante.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">Envoyer mon intérêt →</a>
+        <a class="btn ghost" href="#detail-fr">Détails du projet</a>
+      </div>
+      <p class="sub" style="font-size:14px">L'envoi d'une marque d'intérêt ne crée aucune obligation de paiement.</p>
+    </div>
+    <figure class="poster">
+      <img src="" data-clone="0" alt="Affiche anglaise d'OVER THE AI. Une pellicule noire et rouge s'enroule hors d'un cadre blanc" width="760" height="1075">
+    </figure>
+  </header>
+
+  <div class="facts" role="list">
+    <div role="listitem"><b>90–120 MIN</b><span>Un film à sketches qui réunit les œuvres et les histoires qui les entourent</span></div>
+    <div role="listitem"><b>IPTV · OTT · IA</b><span>Diffusion sur les plateformes IPTV, OTT et de contenus IA ; détails après examen et négociation avec les plateformes</span></div>
+    <div role="listitem"><b>TOUS LES PARTICIPANTS</b><span>Ouvert aux cinéastes de KAICON 2026, primés ou non</span></div>
+  </div>
+
+  <section id="detail-fr">
+    <div class="two">
+      <div>
+        <div class="eyebrow">À propos</div>
+        <h2>Le prochain chapitre des cinéastes et de leurs films</h2>
+        <p class="lead">Les films de KAICON 2026, les entretiens avec les réalisateurs et les histoires de chaque production sont réunis dans un projet de film à sketches de 90 à 120 minutes, dont la diffusion sur IPTV et OTT est ensuite recherchée. Chaque réalisateur soumet un film. Les 90 à 120 minutes sont l'objectif pour l'ensemble du projet, et non la durée d'un film individuel.</p>
+      </div>
+      <ul class="points">
+        <li>Un projet post-festival pour les cinéastes et créateurs de KAICON</li>
+        <li>Des films KAICON associés à des entretiens avec les réalisateurs</li>
+        <li>Distributeur : Maru Art Center ; un film à sketches de 90 à 120 minutes visant la diffusion sur IPTV (KT Qook TV, SK Btv, U+tv), OTT et les plateformes de contenus IA</li>
+        <li>Reportage dans KAICON Magazine, avec image de marque et promotion du réalisateur et du film</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="why-fr">
+    <div class="eyebrow">Pourquoi participer</div>
+    <h2>Voici comment cela<br>fait avancer votre carrière</h2>
+    <p class="lead">Ce qui s'arrêtait à une simple sélection en festival devient un crédit sur un projet officiel en quête de diffusion. Ce projet est conçu pour votre carrière après le festival.</p>
+    <div class="why">
+      <div class="w"><h3>Une ligne de plus dans votre <em>filmographie</em></h3><p>Votre court métrage fait partie d'un film à sketches de 90 à 120 minutes visant la diffusion sur IPTV et OTT, et votre nom figure au générique officiel du projet.</p></div>
+      <div class="w"><h3>De participant au festival à <em>réalisateur participant</em></h3><p>Vous passez de réalisateur ayant soumis un film à réalisateur participant cité dans un projet de diffusion. Cette expérience peut figurer telle quelle dans votre profil et votre portfolio.</p></div>
+      <div class="w"><h3>Votre présentation, conservée en <em>vidéo et en magazine</em></h3><p>La vidéo d'entretien et les deux pages dans KAICON Magazine deviennent votre matériel de présentation. Utilisez-les dans vos propositions de collaboration auprès de producteurs et de plateformes, sur les réseaux sociaux et dans vos candidatures.</p></div>
+      <div class="w"><h3>Allez plus loin : <em>coréalisateur ou coproducteur</em> un crédit possible</h3><p>Si vous prenez part à un travail de production supplémentaire, un crédit de coréalisateur ou de coproducteur est discuté selon votre rôle réel et le contrat. Vous pouvez élargir votre expérience de production avec le projet.</p></div>
+      <div class="w"><h3>Un accord formel qui relie votre film aux <em>revenus</em></h3><p>Lorsque la diffusion OTT ou IPTV génère des revenus, ils sont partagés avec les réalisateurs participants selon les conditions d'un accord distinct. Tout est consigné par écrit, et non laissé à une promesse verbale.</p></div>
+      <div class="w"><h3>Gardez vos droits, <em>limitez le risque</em></h3><p>Le droit d'auteur reste le vôtre, et l'envoi du formulaire ne coûte rien. Vous décidez après avoir lu les conditions et les avoir acceptées.</p></div>
+    </div>
+    <div class="why-cta"><p>Vous pouvez candidater, primé ou non. Commencez par laisser votre intérêt dans le formulaire.</p><a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">Envoyer mon intérêt →</a></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Avantages</div>
+    <h2>Ce que reçoivent les réalisateurs participants</h2>
+    <div class="cards">
+      <div class="card"><h3>Crédit officiel au projet</h3><p>Crédits de réalisateur original et de réalisateur participant au film à sketches. Si vous prenez part à un travail de production supplémentaire, un crédit de coréalisateur ou de coproducteur est discuté dans le cadre d'un accord distinct.</p></div>
+      <div class="card"><h3>Diffusion IPTV·OTT et plateformes de contenus IA</h3><p>Les courts métrages et les entretiens avec les réalisateurs sont assemblés en un film à sketches de long métrage afin d'augmenter les chances de diffusion sur les plateformes IPTV, OTT et de contenus IA. L'avancement est communiqué par e-mail aux réalisateurs participants.</p></div>
+      <div class="card"><h3>Image de marque dans KAICON Magazine</h3><p>Un reportage de deux pages sur votre film et sur vous : profil, présentation du film, philosophie créative, entretien et coulisses. Un fichier numérique des pages est fourni.</p></div>
+      <div class="card"><h3>Un entretien avec le réalisateur</h3><p>Tourné en présentiel ou à distance, avec le montage de l'entretien nécessaire au reportage.</p></div>
+      <div class="card"><h3>Portfolio et promotion</h3><p>Utilisez le contenu du magazine dans votre portfolio, sur les réseaux sociaux et dans vos propositions de collaboration en Corée et à l'étranger.</p></div>
+      <div class="card"><h3>Visibilité dans le réseau KAICON</h3><p>Dans le périmètre convenu, votre film et votre nom sont présentés sur le site web, dans le magazine, sur les réseaux sociaux et via le réseau KAICON.</p></div>
+      <div class="card share"><h3>Partage des revenus de diffusion OTT·IPTV</h3><p>Lorsque la diffusion OTT ou IPTV génère des revenus, ils sont partagés avec les réalisateurs participants selon les conditions de diffusion et de règlement fixées dans un accord distinct. La part et le mode de règlement vous sont expliqués avant la signature.</p></div>
+    </div>
+  </section>
+
+  <section id="market-fr">
+    <div class="eyebrow">IPTV · OTT</div>
+    <h2>Comment votre film atteint le public</h2>
+    <p class="lead">Nous visons à réunir les films de KAICON et les entretiens avec les réalisateurs en un seul film à sketches et à le proposer aux plateformes IPTV, OTT et de contenus IA. Voici comment l'IPTV et l'OTT sont utilisés en Corée aujourd'hui.</p>
+    <div class="partners"><div><b>DISTRIBUTEUR</b><span>Maru Art Center</span></div><div><b>DIFFUSION IPTV ENVISAGÉE</b><span>KT Qook TV · SK Btv · U+tv</span></div></div>
+    <div class="market-grid">
+      <div class="stat"><b>21,53 M</b><span>Abonnés IPTV (2e semestre 2025)</span><small>59,57 % des quelque 36,15 M d'abonnés à la télévision payante</small></div>
+      <div class="stat"><b>81.8%</b><span>Taux d'usage de l'OTT</span><small>Le taux d'usage de l'OTT payant est de 65,5 %</small></div>
+      <div class="stat"><b>83.6%</b><span>des utilisateurs d'OTT regardent sur smartphone</span><small>36,4 % regardent sur téléviseur</small></div>
+    </div>
+    <figure class="flowfig"><svg viewBox="0 0 760 232" role="img" aria-label="Les films et les entretiens avec les réalisateurs sont assemblés en un film à sketches et proposés aux plateformes IPTV, OTT et de contenus IA" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<defs><marker id="are-fr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e0301e"/></marker></defs>
+<rect x="10" y="41" width="190" height="150" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="105" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">Films KAICON</text>
+<text x="105" y="109" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">+ entretiens</text>
+<text x="105" y="147" text-anchor="middle" font-size="13" fill="currentColor" opacity=".7">Les films et leurs histoires</text>
+<line x1="206" y1="116" x2="262" y2="116" stroke="#e0301e" stroke-width="3" marker-end="url(#are-fr)"/>
+<rect x="268" y="41" width="190" height="150" rx="2" fill="#e0301e"/>
+<text x="363" y="87" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">OVER THE AI</text>
+<text x="363" y="117" text-anchor="middle" font-size="15" fill="#fff">Film à sketches de 90–120 min</text>
+<text x="363" y="147" text-anchor="middle" font-size="13" fill="#fff" opacity=".9">Diffusion envisagée</text>
+<line x1="464" y1="85" x2="520" y2="40" stroke="#e0301e" stroke-width="3" marker-end="url(#are-fr)"/>
+<rect x="526" y="8" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="35" font-size="16" font-weight="700" fill="currentColor">IPTV</text>
+<text x="542" y="56" font-size="12.5" fill="currentColor" opacity=".75">KT Qook TV · SK Btv · U+tv</text>
+<line x1="464" y1="115" x2="520" y2="116" stroke="#e0301e" stroke-width="3" marker-end="url(#are-fr)"/>
+<rect x="526" y="84" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="111" font-size="16" font-weight="700" fill="currentColor">OTT</text>
+<text x="542" y="132" font-size="12.5" fill="currentColor" opacity=".75">Applications, téléphones et téléviseurs connectés</text>
+<line x1="464" y1="145" x2="520" y2="192" stroke="#e0301e" stroke-width="3" marker-end="url(#are-fr)"/>
+<rect x="526" y="160" width="224" height="64" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="542" y="187" font-size="16" font-weight="700" fill="currentColor">Plateformes de contenus IA</text>
+<text x="542" y="208" font-size="12.5" fill="currentColor" opacity=".75">Plateformes de vidéos créées par IA</text>
+</svg><figcaption>Aperçu de la diffusion OVER THE AI (schéma conceptuel)</figcaption></figure>
+    <p class="src">Sources : Commission coréenne de la communication et des médias audiovisuels et KAIT, « Enquête 2025 sur les usages des médias audiovisuels » (publiée le 30 déc. 2025) ; chiffres de la Commission sur les abonnés à la télévision payante (publiés en mai 2026). Il s'agit de chiffres du marché coréen. Les dates de mise en ligne propres à chaque plateforme sont communiquées selon les résultats de l'examen et de la négociation avec les plateformes.
+    · <a href="https://www.dailian.co.kr/news/view/1592552/" target="_blank" rel="noopener">Article sur l'usage de l'OTT (en coréen)</a> · <a href="https://view.asiae.co.kr/article/2026052914300672556" target="_blank" rel="noopener">Article sur les abonnés IPTV (en coréen)</a></p>
+  </section>
+
+  <section class="dark" id="interview-fr">
+    <div class="wrap">
+      <div class="eyebrow">Entretien avec le réalisateur</div>
+      <h2>Guide du tournage de l'entretien</h2>
+      <p class="lead">Nous filmons l'histoire derrière votre œuvre. L'entretien est utilisé à la fois dans le film à sketches et dans le reportage du magazine.</p>
+      <dl class="steps" style="margin-bottom:0">
+        <div class="row"><dt>Séances</dt><dd>Un entretien par réalisateur</dd></div>
+        <div class="row"><dt>Style</dt><dd>Un style documentaire classique, tourné avec deux caméras (face et angle latéral à 45°) et des micros sans fil.</dd></div>
+        <div class="row"><dt>Format</dt><dd>Choisissez présentiel, à distance ou flexible.</dd></div>
+        <div class="row"><dt>Lieu</dt><dd>Tourné dans un studio professionnel. Le lieu est communiqué séparément.</dd></div>
+        <div class="row"><dt>Calendrier et lieu</dt><dd>Indiquez deux dates et horaires possibles ainsi que les régions où vous pouvez être filmé. Le calendrier est fixé ensemble à l'avance. Si une date de tournage commune est nécessaire, nous vous envoyons des dates candidates.</dd></div>
+        <div class="row"><dt>Langue</dt><dd>Indiquez votre langue préférée et si vous avez besoin d'un interprète. Les frais d'interprétation et d'autres demandes particulières ne sont engagés qu'avec votre accord écrit préalable.</dd></div>
+        <div class="row"><dt>Vos sujets</dt><dd>Partagez dans le formulaire votre motivation, votre processus de production ou tout thème dont vous souhaitez parler.</dd></div>
+        <div class="row"><dt>Montage</dt><dd>Le montage de l'entretien nécessaire au reportage est inclus.</dd></div>
+        <div class="row"><dt>Exemples de questions</dt><dd>Une liste des questions d'entretien prévues sera ajoutée à cette page.</dd></div>
+      </dl>
+      <p class="how">Le style documentaire capte ce que dit le réalisateur et la manière dont il le dit, sans suivre de script figé.</p>
+      <div class="photos"><figure><img src="" data-clone="1" alt="Un réalisateur assis dans un studio aux murs de béton, filmé par deux caméras, de face et de côté" loading="lazy"><figcaption>Dispositif d'entretien à deux caméras (exemple)</figcaption></figure><figure><img src="" data-clone="2" alt="Gros plan d'un entretien avec un réalisateur, micro-cravate sans fil fixé au col de la chemise" loading="lazy"><figcaption>Gros plan avec micro-cravate sans fil (exemple)</figcaption></figure></div>
+      <div class="shots"><figure><svg viewBox="0 0 400 330" role="img" aria-label="Plan vu de dessus d'un tournage d'entretien avec une caméra de face, une caméra latérale à 45 degrés, deux lumières et un micro sans fil" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<rect x="10" y="10" width="380" height="285" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="200" cy="150" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="205" cy="164" r="4" fill="#e0301e"/>
+<text x="200" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">Réalisateur</text>
+<g transform="translate(200 252)"><rect x="-14" y="-9" width="28" height="18" fill="currentColor"/><polygon points="-6,-9 6,-9 11,-18 -11,-18" fill="currentColor"/></g>
+<line x1="186" y1="232" x2="150" y2="160" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/><line x1="214" y1="232" x2="250" y2="160" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="160" y="285" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">Caméra A · Face</text>
+<g transform="translate(276 216) rotate(-45)"><rect x="-14" y="-9" width="28" height="18" fill="currentColor"/><polygon points="-6,-9 6,-9 11,-18 -11,-18" fill="currentColor"/></g>
+<line x1="262" y1="198" x2="216" y2="134" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/><line x1="262" y1="198" x2="184" y2="166" stroke="#e0301e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="318" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">Caméra B · Côté 45°</text>
+<rect x="56" y="62" width="34" height="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="90" y1="69" x2="140" y2="110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+<text x="73" y="96" text-anchor="middle" font-size="13" fill="currentColor">Lumière</text>
+<rect x="310" y="62" width="34" height="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="310" y1="69" x2="262" y2="110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4" opacity=".6"/>
+<text x="327" y="96" text-anchor="middle" font-size="13" fill="currentColor">Lumière</text>
+<circle cx="100" cy="225" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+<text x="100" y="252" text-anchor="middle" font-size="13" fill="currentColor">Intervieweur</text>
+<circle cx="26" cy="316" r="4" fill="#e0301e"/><text x="36" y="320" font-size="12.5" fill="currentColor">Micro sans fil</text>
+</svg><figcaption>Plan du tournage (schéma conceptuel)</figcaption></figure><figure><svg viewBox="0 0 400 250" role="img" aria-label="Exemple de la vue large de face de la caméra A et de la vue latérale à 45 degrés de la caméra B" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR',system-ui,sans-serif">
+<rect x="14" y="20" width="176" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="34" y1="28" x2="34" y2="122" stroke="currentColor" stroke-width="1.5" opacity=".35"/><line x1="170" y1="28" x2="170" y2="122" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+<circle cx="102" cy="68" r="15" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M46 130 Q48 100 102 96 Q156 100 158 130" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="109" cy="101" r="3.5" fill="#e0301e"/>
+<text x="102" y="154" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">Caméra A · Face</text><text x="102" y="174" text-anchor="middle" font-size="12.5" fill="currentColor" opacity=".75">Vue large principale</text>
+<rect x="210" y="20" width="176" height="110" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="296" cy="64" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/><polygon points="315,59 324,68 315,71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M238 130 Q244 100 290 96 Q336 98 350 130" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="302" cy="103" r="4" fill="#e0301e"/>
+<text x="298" y="154" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">Caméra B · Côté 45°</text><text x="298" y="174" text-anchor="middle" font-size="12.5" fill="currentColor" opacity=".75">Seconde vue plus serrée</text>
+<text x="200" y="222" text-anchor="middle" font-size="13" fill="currentColor">Le montage alterne entre les deux vues</text>
+</svg><figcaption>Cadrage à deux caméras (exemple)</figcaption></figure></div>
+      <div class="shoot">
+        <div><h3>Déroulement du tournage</h3><ol class="mini">
+          <li><div><b>Préparation</b><span>Nous confirmons le calendrier, le format, la langue et vos sujets via le formulaire et par e-mail.</span></div></li>
+          <li><div><b>Jour de tournage</b><span>L'entretien est filmé en studio avec deux caméras et des micros sans fil. Le lieu est communiqué séparément.</span></div></li>
+          <li><div><b>Montage</b><span>Nous montons l'entretien selon les besoins du reportage.</span></div></li>
+          <li><div><b>Utilisation</b><span>Dans le périmètre convenu, il est utilisé dans le film à sketches et dans le reportage de KAICON Magazine.</span></div></li>
+        </ol></div>
+        <div><h3>Ce qu'il est utile de préparer</h3><ol class="mini check">
+          <li><div><b>Biographie et photo du réalisateur</b><span>Utilisées pour le reportage du magazine.</span></div></li>
+          <li><div><b>Synopsis, affiche, photogrammes du film</b><span>Indiquez les crédits obligatoires et la manière dont vous souhaitez être présenté.</span></div></li>
+          <li><div><b>Détails du fichier maître</b><span>Spécifications vidéo et audio, sous-titres, et date à laquelle le fichier peut être fourni.</span></div></li>
+          <li><div><b>Droits et outils d'IA</b><span>Droits sur la musique, les images et les interprètes, et conditions des outils d'IA utilisés.</span></div></li>
+        </ol></div>
+      </div>
+      <p class="note">L'étendue de l'utilisation de votre image, de votre apparence et de votre voix est convenue séparément avant le tournage. Les besoins d'accessibilité ou de calendrier peuvent être indiqués dans le formulaire.</p>
+    </div>
+  </section>
+
+  <section id="fees-fr">
+    <div class="eyebrow">Frais de participation</div>
+    <h2>Frais de participation</h2>
+    <p class="lead">Les frais couvrent les coûts concrets de production de l'entretien et du contenu du magazine, d'assemblage du film à sketches et de préparation des propositions de diffusion. Les dates de mise en ligne propres à chaque plateforme sont communiquées selon les résultats de l'examen et de la négociation avec les plateformes.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Programme</th><th>Tarif international</th><th>Paiement en Corée</th><th>Inclus</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>Projet de diffusion IPTV·OTT</b></td>
+            <td class="price">USD 350</td>
+            <td class="price">500 000 KRW</td>
+            <td><ul><li>Courts métrages et entretiens assemblés en un film à sketches de long métrage</li><li>Diffusion sur les plateformes IPTV, OTT et de contenus IA</li></ul></td>
+          </tr>
+          <tr>
+            <td><b>KAICON Magazine uniquement</b></td>
+            <td class="price">USD 200</td>
+            <td class="price">300 000 KRW</td>
+            <td><ul><li>Profil du réalisateur, présentation du film, philosophie créative</li><li>Entretien et coulisses</li></ul></td>
+          </tr>
+          <tr class="hl">
+            <td><b>Forfait intégré</b><span class="tag">LES DEUX PROGRAMMES</span></td>
+            <td class="price">USD 500</td>
+            <td class="price">700 000 KRW</td>
+            <td><ul><li>Le projet de diffusion IPTV·OTT</li><li>Reportage KAICON Magazine sur le film et le réalisateur</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="option"><div><h3><span class="tag">OPTION</span>Couverture de KAICON Magazine</h3><p>Si vous le souhaitez, vous pouvez figurer en couverture du magazine. L'option comprend le reportage de couverture dans le numéro choisi et le travail sur l'image de couverture, et peut être ajoutée à tout programme incluant KAICON Magazine. Le choix de la couverture se fait après discussion avec la rédaction et avec votre accord.</p></div><div class="amt" style="flex:0 0 auto">+ USD 200<small>Paiement en Corée communiqué séparément</small></div></div>
+    <p class="fine">Le forfait intégré comprend à la fois le projet IPTV·OTT et KAICON Magazine. Le tarif international est en USD et le paiement en Corée en KRW. Le traitement fiscal et les frais de virement sont précisés par écrit avant le paiement. Les exemplaires imprimés du magazine, l'expédition, ainsi que les frais de déplacement, d'hébergement ou d'interprétation ne sont pas inclus.</p>
+    <div class="refund">
+      <div><b>Annulation avant paiement</b><span>Vous pouvez annuler à tout moment avant de payer, sans frais.</span></div>
+      <div><b>Annulation après paiement</b><span>Les frais payés ne sont pas remboursables.</span></div>
+      <div><b>Information et accord préalables</b><span>Les conditions de non-remboursement sont envoyées par e-mail avant le paiement, et nous ne poursuivons qu'après votre accord.</span></div>
+      
+    </div>
+  </section>
+
+  <section id="process-fr">
+    <div class="eyebrow">Processus</div>
+    <h2>Comment cela se passe</h2>
+    <p class="lead">Vous recevez des explications et donnez votre accord à chaque étape avant de passer à la suivante. Le paiement n'intervient qu'après l'étape 4.</p>
+    <ol class="flow">
+      <li>Envoyer le formulaire<span>Reçu via Google Forms</span></li>
+      <li>Examen du film et des droits<span>Nous examinons votre envoi</span></li>
+      <li>Périmètre, calendrier et contrat<span>Informations individuelles par e-mail</span></li>
+      <li>Votre décision finale<span>Le réalisateur décide</span></li>
+      <li>Accord et contrat distincts<span>Accord d'utilisation du contenu</span></li>
+      <li>Paiement<span>Selon l'échéance et le montant indiqués</span></li>
+      <li>Entretien, magazine, film à sketches<span>Réalisés selon le calendrier convenu</span></li>
+      <li>Diffusion et promotion<span>Résultats communiqués par e-mail</span></li>
+    </ol>
+  </section>
+
+  <section id="notice-fr">
+    <div class="eyebrow">Avis</div>
+    <h2>À lire avant de candidater</h2>
+    <ul class="notice">
+      <li class="ok">L'envoi d'une marque d'intérêt ne crée aucune obligation de paiement.</li>
+      <li class="ok">Le droit d'auteur de votre film reste le vôtre et n'est pas transféré par ce projet.</li>
+      <li class="ok">Les droits d'utilisation ne sont accordés que par un accord distinct.</li>
+      <li class="ok">Le consentement promotionnel, la participation payante et le contrat de diffusion sont traités séparément.</li>
+      <li class="ok">Les mises en ligne et dates de sortie sur les plateformes sont annoncées selon les résultats de l'examen et de la négociation avec les plateformes.</li>
+      <li>Les crédits de coréalisateur et de coproducteur dépendent de votre rôle réel et du contrat.</li>
+    </ul>
+    <p class="fine">Un film n'est publié ou diffusé qu'une fois les droits sur sa musique, ses images, ses interprètes et ses outils d'IA validés. Les documents que vous fournissez ne sont pas utilisés pour entraîner une IA ou un modèle.</p>
+  </section>
+
+  <section id="faq-fr">
+    <div class="eyebrow">FAQ</div>
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>Puis-je candidater si mon film n'a pas été primé ?</summary><p>Oui. Tout participant à KAICON 2026 peut candidater, primé ou non.</p></details>
+      <details><summary>Dois-je payer dès que je candidate ?</summary><p>Non. Le formulaire enregistre seulement votre intérêt et ne crée aucune obligation de paiement. Vous payez après avoir reçu le périmètre et les conditions et les avoir acceptés.</p></details>
+      <details><summary>Le droit d'auteur ou le droit de diffusion de mon film est-il transféré ?</summary><p>Non. Le droit d'auteur de votre film reste à vous, créateur ou titulaire des droits, et n'est pas transféré par ce projet. Pour que KAICON puisse inclure, monter, projeter ou diffuser le film, vous signez d'abord un accord distinct accordant ces droits d'utilisation. L'accord fixe le périmètre d'utilisation, l'étendue du montage et de l'approbation, le territoire et la durée, le crédit, ainsi que le partage et le règlement d'éventuels revenus. L'envoi du formulaire ou l'accord à un usage promotionnel n'accorde pas de droits d'utilisation, et le film n'est ni publié ni diffusé avant la signature de l'accord.</p></details>
+      <details><summary>Puis-je soumettre plusieurs films ?</summary><p>Merci de soumettre un film par réalisateur.</p></details>
+      <details><summary>Comment le film sera-t-il diffusé sur IPTV et OTT ?</summary><p>Nous visons à diffuser un film à sketches de 90 à 120 minutes réunissant les films et les entretiens avec les réalisateurs sur IPTV (KT Qook TV, SK Btv, U+tv), OTT et les plateformes de contenus IA, avec Maru Art Center comme distributeur. Les mises en ligne, dates de sortie et autres détails propres à chaque plateforme sont annoncés par e-mail selon les résultats de l'examen et de la négociation avec les plateformes.</p></details>
+      <details><summary>Puis-je participer depuis l'étranger ?</summary><p>Oui, bien sûr. Vous pouvez aussi filmer l'entretien vous-même et nous l'envoyer.</p></details>
+      <details><summary>Suis-je remboursé si j'annule ?</summary><p>Les frais payés ne sont pas remboursables. Avant le paiement, nous envoyons le périmètre et les conditions de non-remboursement, et nous ne poursuivons qu'après votre accord. L'envoi du formulaire ne coûte rien.</p></details>
+      <details><summary>Comment vous contacter ?</summary><p>Indiquez [OVER THE AI Inquiry] dans l'objet de l'e-mail, avec votre nom, le titre du film et vos coordonnées. Vous pouvez aussi nous appeler.</p></details>
+    </div>
+  </section>
+
+  <section class="dark final">
+    <div class="wrap">
+      <div class="eyebrow">Candidater</div>
+      <h2>Votre film. Notre prochain chapitre.</h2>
+      <p class="lead">L'envoi d'une marque d'intérêt ne signifie pas que vous réglez les frais. Un accord distinct d'utilisation du contenu vient d'abord : n'hésitez donc pas à candidater.</p>
+      <div class="cta-row qr-row">
+        <a class="btn primary" href="https://forms.gle/bsicfa5QqMyhdzTW8" target="_blank" rel="noopener">Candidater à OVER THE AI →</a>
+      <figure class="qrbox"><img src="" data-clone="3" alt="QR code du formulaire de candidature OVER THE AI" width="112" height="112"><figcaption>Scannez pour candidater<span>Ouvrez le formulaire avec l'appareil photo de votre téléphone</span></figcaption></figure></div>
+      <div class="contact">
+        <div><b>SECRÉTARIAT KAICON</b>Président exécutif Lee Donghyun · Producteur Park Seonghan · Coordinatrice Kim Mijeong</div>
+        <div><b>CONTACT</b>+82 507-1471-7991 · weworld21@gmail.com</div>
+        <div><b>SITE OFFICIEL KAICON</b><a href="https://www.kaicon.kr/" target="_blank" rel="noopener">www.kaicon.kr</a></div>
+        <div><b>DISTRIBUTEUR</b>Maru Art Center</div>
+        <div><b>KAICON BUSINESS NETWORK</b><a href="https://kgaf.co.kr/" target="_blank" rel="noopener">kgaf.co.kr</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>© KAICON Business Network · OVER THE AI est un projet post-festival pour les cinéastes et créateurs de KAICON 2026.</footer>
+</div>
 </div>
 <script>
 (function(){
-  var ko=document.getElementById('L-ko'),en=document.getElementById('L-en'),bk=document.getElementById('b-ko'),be=document.getElementById('b-en');
-  function set(l,push){var e=l==='en';ko.hidden=e;en.hidden=!e;bk.setAttribute('aria-pressed',String(!e));be.setAttribute('aria-pressed',String(e));
-    document.documentElement.lang=e?'en':'ko';document.body.style.wordBreak=e?'normal':'keep-all';
-    if(push){try{history.replaceState(null,'',e?'#english':'#korean')}catch(x){}}}
-  bk.onclick=function(){set('ko',true)};be.onclick=function(){set('en',true)};
-  if(location.hash==='#english')set('en',false);
+  var codes=['ko','en','ja','zh','fr'],names={ko:'korean',en:'english',ja:'japanese',zh:'chinese',fr:'french'},htmlLang={ko:'ko',en:'en',ja:'ja',zh:'zh-Hans',fr:'fr'};
+  var enImgs=document.querySelectorAll('#L-en img');
+  document.querySelectorAll('img[data-clone]').forEach(function(im){var s=enImgs[+im.getAttribute('data-clone')];if(s)im.src=s.src;});
+  function set(l,push){codes.forEach(function(c){var p=document.getElementById('L-'+c),b=document.getElementById('b-'+c);p.hidden=(c!==l);b.setAttribute('aria-pressed',String(c===l));});
+    document.documentElement.lang=htmlLang[l];document.body.style.wordBreak=l==='ko'?'keep-all':'normal';
+    if(push){try{history.replaceState(null,'',"#"+names[l])}catch(x){}}}
+  codes.forEach(function(c){document.getElementById('b-'+c).onclick=function(){set(c,true)};});
+  var h=location.hash.replace('#',''),f=null;codes.forEach(function(c){if(names[c]===h||c===h)f=c;});
+  if(f&&f!=='ko')set(f,false);
 })();
 </script>
 </body>
