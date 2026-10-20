@@ -199,6 +199,25 @@ footer{padding-block:32px;font-size:13px;color:var(--muted)}
 .partners b{display:block;font-size:12px;letter-spacing:.14em;color:var(--red);margin-bottom:4px}
 .partners span{font-weight:700;font-size:clamp(16px,2.2vw,20px)}
 @media (max-width:860px){.photos{grid-template-columns:1fr}.partners{grid-template-columns:1fr}.partners div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+/* interview section: compact */
+section.dark#interview,section.dark#interview-en{padding-block:44px}
+#interview .lead,#interview-en .lead{margin-top:10px;font-size:15px}
+#interview .steps,#interview-en .steps{margin-top:22px;gap:0 40px}
+#interview .row,#interview-en .row{padding:11px 0;grid-template-columns:96px 1fr;font-size:14.5px;line-height:1.6}
+#interview .how,#interview-en .how{margin-top:22px;font-size:14.5px}
+#interview .photos,#interview-en .photos{margin-top:24px;gap:14px;grid-template-columns:1fr 1fr}
+#interview .photos img,#interview-en .photos img{aspect-ratio:16/9}
+#interview .photos figcaption,#interview-en .photos figcaption{font-size:12px;margin-top:6px}
+#interview .shots,#interview-en .shots{margin-top:24px;gap:14px}
+#interview .shots figure,#interview-en .shots figure{padding:10px}
+#interview .shots figcaption,#interview-en .shots figcaption{font-size:12px;margin-top:6px}
+#interview .shoot,#interview-en .shoot{margin-top:28px;gap:20px 40px}
+#interview .shoot h3,#interview-en .shoot h3{font-size:16px;margin-bottom:4px}
+#interview .mini li,#interview-en .mini li{padding:8px 0;font-size:14px;line-height:1.55}
+#interview .mini li span,#interview-en .mini li span{font-size:13.5px}
+#interview .note,#interview-en .note{margin-top:20px;padding:12px 16px;font-size:13.5px}
+@media (max-width:860px){#interview .photos,#interview-en .photos,#interview .shots,#interview-en .shots{grid-template-columns:1fr 1fr}#interview .steps,#interview-en .steps{gap:0}}
+@media (max-width:560px){#interview .photos,#interview-en .photos,#interview .shots,#interview-en .shots{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
